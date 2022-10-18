@@ -1,0 +1,39 @@
+﻿
+@model WebApplication23.Details
+@{
+    Layout = null;
+}
+<head>
+    <style>
+        .a{
+            padding: 0px 0px 25px 0px;
+        }
+    </style>
+</head>
+@using(Html.BeginForm("Next","Home")){
+    <body>
+        <form>
+            <div class="a">
+                <label>id</label>
+                @Html.TextBoxFor(h=>h.Id)
+            </div>
+            <div class="a">
+                <label>name</label>
+                @Html.TextBoxFor(h=>h.Name)
+            </div>
+            <div class="a">
+                <label>age</label>
+                @Html.TextBoxFor(h=>h.Age)
+            </div>
+            <div class="a">
+                <label>salary</label>
+                @Html.TextBoxFor(h=>h.Salary)
+            </div>
+            <div class="a">
+                <button>submit</button>
+            </div>
+        </form>
+    </body>
+}
+
+
